@@ -1,0 +1,20 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+// ---- Finance ERP refinements ----
+// Dark-mode friendly KPI gradients (the light-mode tints are too bright on dark surfaces)
+[data-bs-theme='dark'] {
+  .bg-gradient-success { background: linear-gradient(320deg, rgba(0, 167, 111, 0.26) 0%, var(--#{$prefix}white) 72%); }
+  .bg-gradient-info    { background: linear-gradient(320deg, rgba(0, 184, 217, 0.24) 0%, var(--#{$prefix}white) 72%); }
+  .bg-gradient-warning { background: linear-gradient(320deg, rgba(255, 171, 0, 0.22) 0%, var(--#{$prefix}white) 72%); }
+  .bg-gradient-danger  { background: linear-gradient(320deg, rgba(255, 86, 48, 0.22) 0%, var(--#{$prefix}white) 72%); }
+}
+
+// Numbers line up in tables and cards
+.table td, .table th { font-variant-numeric: tabular-nums; }
+.table > :not(caption) > * > * { padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.table-responsive thead th { font-size: 0.78rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--#{$prefix}secondary-color); }
+.sticky-top { z-index: 2; }
+.card { transition: box-shadow 0.2s ease; }
+a.list-group-item-action { cursor: pointer; }

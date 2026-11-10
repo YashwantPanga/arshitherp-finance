@@ -1,0 +1,112 @@
+// Theme Docs
+
+// Docs header
+
+.custom-container {
+  @media (min-width: 1536px) {
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+}
+
+// Sidebar
+
+.sidebar-nav-fixed {
+  position: sticky;
+  top: 4.0625rem;
+  height: calc(100vh - 2rem);
+  overflow-y: auto;
+
+  ul {
+    list-style: none;
+    li {
+      a {
+        font-size: 0.8125rem;
+        color: var(--#{$prefix}gray-600);
+        display: block;
+        padding: 0.125rem 0rem;
+
+        line-height: 1.4375rem;
+        text-decoration: none;
+        transition: 0.5s ease;
+        &:hover {
+          color: var(--#{$prefix}primary);
+        }
+        &.active {
+          color: var(--#{$prefix}primary);
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0rem;
+        li {
+          a {
+            padding: 0.125rem 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// layouts
+
+// Scrollspy
+
+.scrollspy-example {
+  position: relative;
+  height: 12.5rem;
+  margin-top: 0.5rem;
+  overflow: auto;
+}
+.scrollspy-example-2 {
+  position: relative;
+  height: 21.875rem;
+  overflow: auto;
+}
+
+// Toast
+
+.toast.hide {
+  display: none;
+}
+
+// Color Swatch
+
+.color-swatch {
+  margin-bottom: 1.875rem;
+  position: relative;
+}
+.color-swatch-header {
+  // border-radius: 0.5rem;
+  height: 4.5rem;
+}
+.color-swatch-body {
+  margin-top: 0.875rem;
+  line-height: 1;
+}
+.color-swatch-body-label {
+  margin-bottom: 0.25rem;
+}
+.color-swatch-body-value {
+  margin-bottom: 0rem;
+}
+
+// Docs border utils
+
+.docs-example-border-utils {
+  [class^='border'] {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.25rem;
+    background-color: var(--#{$prefix}gray-100);
+  }
+}
+.docs-example-border-utils-0 {
+  [class^='border'] {
+    border: 1px solid var(--#{$prefix}gray-300);
+  }
+}

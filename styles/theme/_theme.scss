@@ -1,0 +1,44 @@
+// Components
+
+// custom classes
+
+@import './components/reboot.scss';
+@import './components/nav.scss';
+@import './components/dropdown.scss';
+@import './components/card.scss';
+@import './components/avatar.scss';
+@import './components/form.scss';
+@import './components/docs.scss';
+@import './components/button.scss';
+@import './components/navbar-vertical.scss';
+@import './components/table.scss';
+@import './components/pagination.scss';
+@import './components/mail';
+@import './components/task-kanban';
+@import './components/chat-app';
+@import './components/badge';
+@import './components/breadcrumb';
+@import './components/progress';
+@import './components/navbar';
+// vendor classes
+
+@import './vendor/nouislider/nouislider.scss';
+@import './vendor/prism/prism.scss';
+@import './vendor/dropzone/dropzone.scss';
+@import './vendor/tns-slider/tns-slider.scss';
+@import './vendor/flatpickr/flatpickr.scss';
+@import './vendor/quill/quill-snow.scss';
+@import './vendor/apexChart/apexchart.scss';
+@import './vendor/sticky-sidebar/sticky-sidebar.scss';
+@import './vendor/tippyjs/tippy';
+@import './vendor/jsvector/jsvectormap';
+@import './vendor/fullcalendar/calendar';
+@import './vendor/datatables/datatables';
+@import './vendor/tagify/tagify';
+@import './vendor/be-stepper/be-stepper';
+@import './vendor/choices.js/choices';
+@import './vendor/input-mask/inputmask';
+@import './vendor/swiper/swiper';
+@import './vendor/listjs/list';
+// darkmode classes
+@import 'darkmode';

@@ -1,0 +1,74 @@
+// Inputmask
+
+@keyframes blink {
+  from,
+  to {
+    border-right-color: var(--#{$prefix}dark);
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+mark.im-caret {
+  animation: 1s blink step-end infinite !important;
+}
+mark.im-caret-select {
+  background-color: var(--#{$prefix}gray-200);
+}
+span.im-static {
+  color: var(--#{$prefix}gray-400);
+}
+div.im-colormask {
+  display: inline-block;
+  border-style: inset;
+  border-width: 2px;
+  appearance: textfield;
+  cursor: text;
+  > input {
+    position: absolute !important;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+    caret-color: transparent;
+    text-shadow: none;
+    appearance: caret;
+    border-style: none;
+    left: 0;
+    &:-webkit-autofill {
+      position: absolute !important;
+      display: inline-block;
+      background-color: transparent;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      transition: background-color 5000s ease-in-out 0s;
+      caret-color: transparent;
+      text-shadow: none;
+      appearance: caret;
+      border-style: none;
+      left: 0;
+      & ~ div {
+        background-color: var(--#{$prefix}gray-600);
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+    &::selection {
+      background: none;
+    }
+    &::-moz-selection {
+      background: none;
+    }
+  }
+  > div {
+    color: var(--#{$prefix}dark);
+    display: inline-block;
+    width: 100px;
+  }
+}
+[im-insert='false'] {
+  caret-color: var(--#{$prefix}danger);
+  caret-shape: block;
+}

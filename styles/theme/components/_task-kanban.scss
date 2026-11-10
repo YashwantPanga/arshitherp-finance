@@ -1,0 +1,22 @@
+// Task Kanban
+
+.task-kanban-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  .task-card {
+    min-width: 20rem;
+    background-color: var(--#{$prefix}gray-200);
+
+    display: inline-flex;
+    border-radius: 1rem;
+  }
+}
+[data-bs-theme='dark'] .task-kanban-container {
+  .task-card {
+    .card {
+      background-color: var(--#{$prefix}gray-100) !important;
+    }
+  }
+}

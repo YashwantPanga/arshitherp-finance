@@ -1,0 +1,38 @@
+// List js
+
+.listjs-sorter {
+  position: relative;
+  cursor: pointer;
+  padding-right: 1.25rem;
+}
+.listjs-sorter {
+  &:after {
+    font-weight: normal;
+    line-height: 1;
+    content: '\eb5a';
+    font-family: 'tabler-icons';
+    color: var(--#{$prefix}gray-400);
+    font-size: 10px;
+    position: absolute;
+    margin-left: 10px;
+
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.listjs-sorter.asc {
+  color: var(--#{$prefix}gray-800);
+  &:after {
+    content: '\ea25';
+    font-family: 'tabler-icons';
+    color: var(--#{$prefix}gray-800);
+  }
+}
+.listjs-sorter.desc {
+  color: var(--#{$prefix}gray-800);
+  &:after {
+    content: '\ea16';
+    font-family: 'tabler-icons';
+    color: var(--#{$prefix}gray-800);
+  }
+}
